@@ -11,9 +11,9 @@ interface CarModelProps {
 }
 
 const MODEL_CONFIGS: Record<string, { scale: number; position: [number, number, number] }> = {
-  '/src/assets/2021_lamborghini_countach_lpi_800-4/scene.gltf': { scale: 0.1, position: [0, -1, 0] },
-  '/src/assets/nissan_z_proto/scene.gltf': { scale: 0.14, position: [0, -1, 0] },
-  '/src/assets/rossa/scene.gltf': { scale: 0.13, position: [0, -1, 0] },
+  '/assets/2021_lamborghini_countach_lpi_800-4/scene.gltf': { scale: 0.1, position: [0, -1, 0] },
+  '/assets/nissan_z_proto/scene.gltf': { scale: 0.14, position: [0, -1, 0] },
+  '/assets/rossa/scene.gltf': { scale: 0.13, position: [0, -1, 0] },
 };
 
 export function CarModel({ modelPath, rotation = [0, Math.PI / 4, 0] }: CarModelProps) {
@@ -61,6 +61,6 @@ export function CarModel({ modelPath, rotation = [0, Math.PI / 4, 0] }: CarModel
 }
 
 // Pre-load models to improve performance
-useGLTF.preload('/src/assets/2021_lamborghini_countach_lpi_800-4/scene.gltf');
-useGLTF.preload('/src/assets/nissan_z_proto/scene.gltf');
-useGLTF.preload('/src/assets/rossa/scene.gltf');
+useGLTF.preload('/assets/2021_lamborghini_countach_lpi_800-4/scene.gltf');
+useGLTF.preload('/assets/nissan_z_proto/scene.gltf');
+useGLTF.preload('/assets/rossa/scene.gltf');

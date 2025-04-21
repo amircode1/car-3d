@@ -17,17 +17,17 @@ const carModels = [
   {
     id: 'countach',
     name: 'لامبورگینی کانتاچ LPI 800-4 (2021)',
-    path: '/src/assets/2021_lamborghini_countach_lpi_800-4/scene.gltf'
+    path: '/assets/2021_lamborghini_countach_lpi_800-4/scene.gltf'
   },
   {
     id: 'nissan-z-proto',
     name: 'نیسان Z Proto',
-    path: '/src/assets/nissan_z_proto/scene.gltf'
+    path: '/assets/nissan_z_proto/scene.gltf'
   },
   {
     id: 'rossa',
     name: 'فراری روسا',
-    path: '/src/assets/rossa/scene.gltf'
+    path: '/assets/rossa/scene.gltf'
   }
 ];
 
@@ -90,6 +90,7 @@ const Scene = memo(({
       e.preventDefault();
       e.stopPropagation();
     };
+    
     canvas.addEventListener('wheel', preventScroll, { passive: false });
     canvas.addEventListener('touchmove', preventTouch, { passive: false });
     // Prevent scroll on parent container as well
